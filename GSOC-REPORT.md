@@ -88,30 +88,30 @@ Created a rough layout for the instant editor dialog and shared it in the public
   User had to copy and past the text in app and then create a cloze note or share the copied text to AnkiDroid will
   opened the NoteEditor Screen: 
  <p align="center">
-    <img alt="" src="legacy-editor.png" width="30%" height="30%">
+    <img alt="" src="media/legacy-editor.png" width="30%" height="30%">
 </p>
 </details>
 
 <details><summary>After Instant Note Editor</summary>
  User can select, and share selected text to AnkiDroid `Instant Note` will help them to create cloze notes without actually opening the app:
   <p align="center">
- <img alt="" src="cloze-editor.png" width="30%" height="30%">   
-<img alt="" src="clozed-words.png" width="30%" height="30%">
-    <img alt="" src="advance-edit.png" width="30%" height="30%">
+ <img alt="" src="media/cloze-editor.png" width="30%" height="30%">   
+<img alt="" src="media/clozed-words.png" width="30%" height="30%">
+    <img alt="" src="media/advance-edit.png" width="30%" height="30%">
 </p>
 </details>
 
 <details><summary>Old Multimedia UI</summary>
  <p align="center">
-    <img alt="" src="mm_o.png" width="30%" height="30%">
-    <img alt="" src="mm_oi.png" width="30%" height="30%">
+    <img alt="" src="media/mm_o.png" width="30%" height="30%">
+    <img alt="" src="media/mm_oi.png" width="30%" height="30%">
 </p>
 </details>
 
 <details><summary>New Multimedia</summary>
  <p align="center">
-    <img alt="" src="mm_b.png" width="30%" height="30%">
-    <img alt="" src="mm_i.png" width="30%" height="30%">
+    <img alt="" src="media/mm_b.png" width="30%" height="30%">
+    <img alt="" src="media/mm_i.png" width="30%" height="30%">
 </p>
 </details>
 
