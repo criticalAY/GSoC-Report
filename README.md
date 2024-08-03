@@ -25,7 +25,7 @@ flashcards application that helps people learn and memorize a diverse variety of
 improvising the process of adding cloze notes in the AnkiDroid app and multimedia UI/UX improvements and at the same time decoupling the 
 multimedia code in the codebase.
 
-## What I did do?
+## What did I do?
 
 ### Community Bonding Period
 It is the initial time that Google gives to be involved in the community activities that happen within an organization. 
