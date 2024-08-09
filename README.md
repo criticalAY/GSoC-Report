@@ -51,12 +51,12 @@ Users can select and share selected text to AnkiDroid. The `Instant Note` featur
 
 ### Instant Note Editor
 <p align="center">
-    <img alt="" src="media/instant_editor.png" width="50%" height="50%">
+    <img alt="" src="media/instant_editor.png">
 </p>
 
 ### Multimedia UI/UX
 <p align="center">
-    <img alt="" src="media/multimedia.png" width="50%" height="50%">
+    <img alt="" src="media/multimedia.png">
 </p>
 
 ## How did I do it?
