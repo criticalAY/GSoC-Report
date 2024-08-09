@@ -3,18 +3,11 @@
 <h1 align="center">criticalAY - Ashish Yadav<br>2024 <br> 
   <a href="[AnkiDroid](https://github.com/ankidroid/Anki-Android)">AnkiDroid</a> </h1>
 
-## Catch me up
-| Handles | User Name |
-| --- | --- |
-| **Github** | [criticalAY](http://github.com/criticalAY) |
-| **Twitter**  | [criticalAY_](https://x.com/criticalAY_) |
-| **LinkedIn**  | [criticalAY](https://www.linkedin.com/in/criticalay/) |
+## Catch me up on
+[Github](http://github.com/criticalAY) | [Twitter](https://x.com/criticalAY_) | [LinkedIn](https://www.linkedin.com/in/criticalay/)
 
 ## My mentors
-| Name | Profile |
-| --- | --- |
-| **David Allison** | [Github](https://github.com/david-allison) |
-| **Shridhar Goel**  | [LinkedIn](https://www.linkedin.com/in/shridhargoel/_) |
+[David Allison](https://github.com/david-allison) | [Shridhar Goel](https://www.linkedin.com/in/shridhargoel/_) 
 
 ## Project summary
 
@@ -26,48 +19,56 @@ flashcards application that helps people learn and memorize a diverse variety of
 * Improving the app's UI & UX for adding multimdedia [Images/Drawing/Camera/Audio Recordings/Inserting files]
 * Decoupling the app's multimedia handling
 
-## What did I do?
+## Results
+
+### Before Instant Note Editor
+The user had to copy and paste the text in the app and then create a cloze note or share the copied text to AnkiDroid, which would open the NoteEditor Screen: 
+<p align="center">
+    <img alt="" src="media/legacy-editor.png" width="30%" height="30%">
+</p>
+
+### After Instant Note Editor
+Users can select and share selected text to AnkiDroid. The `Instant Note` feature helps them create cloze notes without actually opening the app:
+<p align="center">
+    <img alt="" src="media/cloze-editor.png" width="30%" height="30%">   
+    <img alt="" src="media/clozed-words.png" width="30%" height="30%">
+    <img alt="" src="media/advance-edit.png" width="30%" height="30%">
+</p>
+
+### Old Multimedia UI
+<p align="center">
+    <img alt="" src="media/mm_o.png" width="30%" height="30%">
+    <img alt="" src="media/mm_oi.png" width="30%" height="30%">
+</p>
+
+### New Multimedia UI
+<p align="center">
+    <img alt="" src="media/mm_b.png" width="30%" height="30%">
+    <img alt="" src="media/mm_i.png" width="30%" height="30%">
+</p>
+
+## Working
+
+### Instant Note Editor
+<p align="center">
+    <img alt="" src="media/instant_editor.png" width="50%" height="50%">
+</p>
+
+### Multimedia UI/UX
+<p align="center">
+    <img alt="" src="media/multimedia.png" width="50%" height="50%">
+</p>
+
+## How did I do it?
 
 ### Community Bonding Period
 Community Bonding is the initial time that Google gives to be involved in the community and activities that happen within an organization. Since the community was small and I already had been contributing and knew the community, it went very well. I enjoyed it and started my coding during this period so that I could compensate for the time that I wouldn't be active due to my university exams.
 
-### Coding period
- - Week 1: I spent my time setting up the project and the necessary files required for the project: designs, icons, and other resources. I then set up the [Intent filters](https://developer.android.com/guide/components/intents-filters), text intents, etc. I created a rough layout for the instant editor dialog and shared it in the public channel and discord for discussion
-- Week 2: I started working on the code and created a PR/s(pull request) so that the mentors can review it and give feedback.
-  * The app used ActionMode.Callback to control adding additional items to the context menu in Text Fields. I extracted this for reuse in my project
-  * UI improvements in the instant note editor dialog such as edit text fields, error/warning text, etc.
-  * Implemented a feature to long press, select multiple words, and convert them to cloze using the extracted ActionMode.Callback.
- 
-- Week 3: Continued to work on the Instant Note Editor code.
-  * Created an extension method for cloze fields, allowing for more efficient and reusable code when dealing with cloze deletions and insertions. This extension method helped in standardizing the way cloze fields are managed across the app.
-  * Improved the error validation code: used the backend to validate, and displayed improved errors/warnings
-  * We decided to migrate the business logic to a `ViewModel`.
-    
-- Week 4: Worked on the open PR handling the suggestions and feedback received from the mentors
-  * Initially, we used EditText and Chip drawables for the user interface to display words. There were multiple limitations to this approach, and after a detailed discussion we shifted to using ChipGroups.
-  * Updated logic for the cloze field, separating logic into a 'single tap mode' and 'advanced edit text' mode.
-    
-- Week 5: This week, I had university exams so my time was spent improving the open PRs
-  
-- Week 6: Created a PR to improve the Instant Editor business logic and started setting up the second part of the project: the Multimedia Editor.
-  * Cloze number logic improvements such as the cloze patterns bug fixes and dialog discard logic setup for the Instant Note Editor.
-  * Setting up Multimedia activity for the second sub-project.
-    
-- Week 7: Continued to work on the open Instant Note Editor PR and created a new PR for multimedia editor 
-  * Continued to fix the Instant Note Editor bugs.
-  * Implemented multimedia UI options for camera and gallery. This new feature allows users to seamlessly integrate multimedia content into their notes. Users can either take a new photo using the camera option or select an existing image from their gallery. This functionality enhances the note-taking experience by enabling richer, more dynamic content. The multimedia UI editor includes intuitive controls for adding, viewing, and managing multimedia elements within the notes, ensuring a user-friendly experience.
-  * The multimedia editor feature is set to dev only, meaning it is currently accessible only to developers within the project. This ensures that the feature is thoroughly tested and refined before being released to a wider audience. It is not in the alpha stage yet, so it is kept out of the hands of regular users until it meets the necessary stability and usability standards.
-    
-- Week 8: Wrapped up Instant Note Editor and continued to work on Multimedia UI/UX.
-  * Got Instant Note Editor ready for public use which will be released in a controlled manner i.e. alpha -> beta -> stable.
-  * Set up Audio and Video clip options in Multimedia and created a PR.
-    
-- Week 9: Continued to work on the Multimedia UI/UX.
-  * Resolved suggestions on the open Multimedia UI/UX PR.
-  * Created PR for Audio Recording and Drawing options
-    
-- Week 10: Wrapping up Multimedia UI/UX
-  * Resolved the suggestions and marked the Multimedia UI/UX ready for public use.
+### Instant Note Editor
+In the first phase of the GSoC project, the focus was on developing the Instant Note Editor. The journey began with setting up the project's foundational elements, such as design resources and intent filters, followed by the creation of a preliminary layout for the editor dialog. Over the following weeks, the project progressed rapidly, with significant enhancements to the user interface and functionality. Key achievements included implementing ActionMode.Callback for improved context menu handling, refining error validation, and migrating business logic to ViewModel for better state management. The transition from using EditText and Chip drawables to ChipGroups marked a crucial improvement in the user interface, addressing initial limitations. The project culminated in the finalization of the Instant Note Editor, which was prepared for a controlled release cycle, ensuring a polished and user-friendly experience for its public rollout.
+
+### Multimedia UI/UX
+The second phase of the project centered around the development of the Multimedia UI/UX, aiming to enrich the note-taking experience by integrating multimedia elements. The setup of the Multimedia activity marked the beginning of this phase, laying the groundwork for subsequent features. Over the weeks, the multimedia editor evolved to include options for camera and gallery integration, enabling users to seamlessly add images to their notes. The development was methodical, with features being tested and refined in a developer-only environment to ensure stability. As the project neared completion, additional multimedia options like audio recording and drawing were incorporated, further enhancing the user experience. The project was wrapped up with the Multimedia UI/UX being marked ready for public use, ensuring a robust and dynamic addition to the note editor.
 
 
 ## Link to pull requests created as a part of GSoC by chronological order
@@ -88,40 +89,6 @@ Community Bonding is the initial time that Google gives to be involved in the co
  15. [Multimedia UI/UX: Add Drawing & Recording options and set multimedia public](https://github.com/ankidroid/Anki-Android/pull/16798)
  16. [Refactor: vibration methods to use Duration](https://github.com/ankidroid/Anki-Android/pull/16803)
  17. [Refactor: move audio package to multimedia package ](https://github.com/ankidroid/Anki-Android/pull/16816)
-
-## Results
-
-<details><summary>Before Instant Note Editor</summary>
-  The user had to copy and paste the text in the app and then create a cloze note or share the copied text to AnkiDroid will
-  opened the NoteEditor Screen: 
- <p align="center">
-    <img alt="" src="media/legacy-editor.png" width="30%" height="30%">
-</p>
-</details>
-
-<details><summary>After Instant Note Editor</summary>
- Users can select, and share selected text to AnkiDroid `Instant Note` will help them to create cloze notes without actually opening the app:
-  <p align="center">
- <img alt="" src="media/cloze-editor.png" width="30%" height="30%">   
-<img alt="" src="media/clozed-words.png" width="30%" height="30%">
-    <img alt="" src="media/advance-edit.png" width="30%" height="30%">
-</p>
-</details>
-
-<details><summary>Old Multimedia UI</summary>
- <p align="center">
-    <img alt="" src="media/mm_o.png" width="30%" height="30%">
-    <img alt="" src="media/mm_oi.png" width="30%" height="30%">
-</p>
-</details>
-
-<details><summary>New Multimedia</summary>
- <p align="center">
-    <img alt="" src="media/mm_b.png" width="30%" height="30%">
-    <img alt="" src="media/mm_i.png" width="30%" height="30%">
-</p>
-</details>
-
 
 ## Plans after GSoC?
 Having successfully fulfilled all the commitments outlined in my GSoC proposal, my focus now shifts towards further enhancing the quality and robustness of the codebase. One critical area that I plan to address is the creation of comprehensive test suites, including both Unit Tests and Android Tests. These tests are essential for ensuring the reliability and stability of the application, and I intend to develop them as part of my ongoing contributions to the project.
